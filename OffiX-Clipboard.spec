@@ -27,7 +27,9 @@ schowku.
 %patch -p1
 
 %build
-./configure --prefix=%{_prefix} --with-dnd-inc=%{_includedir}/X11 --with-dnd-lib=%{_libdir}
+%configure2_13 \
+	--with-dnd-inc=%{_includedir}/X11 \
+	--with-dnd-lib=%{_libdir}
 %{__make}
 
 %install
