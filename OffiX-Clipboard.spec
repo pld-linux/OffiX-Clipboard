@@ -37,7 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults
 install -c Clipboard.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Clipboard
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix}/ install
-strip $RPM_BUILD_ROOT%{_bindir}/clipboard
 
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Applications/
 install -o root %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
