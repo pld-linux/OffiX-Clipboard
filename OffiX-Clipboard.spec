@@ -4,6 +4,8 @@ Version:	2.4
 Release:	8
 License:	GPL
 Group:		X11
+Group(de):	X11
+Group(pl):	X11
 Source0:	ftp://ftp.leb.net/pub/offix/Clipboard-%{version}.tar.gz
 Source1:	offix-clipboard.desktop
 Patch0:		Clipboard-2.4-Xaw3d.patch
