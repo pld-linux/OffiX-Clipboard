@@ -1,0 +1,11 @@
+--- Clipboard-2.4/Makefile.in.orig	Sun Feb 16 20:01:38 1997
++++ Clipboard-2.4/Makefile.in	Sun Feb 16 20:01:57 1997
+@@ -42,7 +42,7 @@
+ man_MANS = clipboard.1
+ bin_PROGRAMS = clipboard
+ clipboard_SOURCES = xclipboard.c icon.c icon.h Clipboard.ad.h
+-LDADD = $(X_EXTRA_LIBS) -lDnd -lXaw -lXmu -lXt -lXext \
++LDADD = $(X_EXTRA_LIBS) -lDnd -lXaw3d -lXmu -lXt -lXext \
+ 	$(X_PRE_LIBS) -lX11 -lm $(X_LIBS)
+ INCLUDES = $(X_CFLAGS) 
+ EXTRA_DIST = Clipboard.ad clipboard.xbm clipboard.xpm clipboard_mask.xbm \
