@@ -29,7 +29,7 @@ schowku.
 
 %build
 ./configure --prefix=%{_prefix} --with-dnd-inc=%{_includedir}/X11 --with-dnd-lib=%{_libdir}
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
