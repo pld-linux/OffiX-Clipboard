@@ -1,5 +1,5 @@
 Summary:	A drag and drop clipboard patch for xclipboard
-Summary(pl):	£ata z obs³ug± drag and drop do xclipboard
+Summary(pl):	Xclipboard z ³at± do obs³ugi "przenie¶ i upu¶æ"
 Name:		OffiX-Clipboard
 Version:	2.4
 Release:	8
