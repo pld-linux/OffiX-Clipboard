@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Clipboard
+Name[pl]=Schowek
 Description=
 Exec=clipboard
 # vi: encoding=utf-8
