@@ -10,7 +10,6 @@ Source1:	offix-clipboard.desktop
 Patch0:		Clipboard-2.4-Xaw3d.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 OffiX-Clipboard is a patch to the standard xclipboard program. If you
