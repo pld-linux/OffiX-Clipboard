@@ -5,7 +5,7 @@ Release: 8
 Source: ftp://ftp.leb.net/pub/offix/Clipboard-2.4.tar.gz
 Source1: offix-clipboard.desktop
 Patch: Clipboard-2.4-Xaw3d.patch
-BuildRoot: /var/tmp/OffiX-Clipboard-build
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Copyright: GPL
 Group: User Interface/X
 
