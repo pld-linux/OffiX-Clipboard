@@ -40,7 +40,7 @@ make prefix=$RPM_BUILD_ROOT%{_prefix}/ install
 strip $RPM_BUILD_ROOT%{_bindir}/clipboard
 
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Applications/
-install -o root $RPM_SOURCE_DIR/offix-clipboard.desktop $RPM_BUILD_ROOT%{_applnkdir}/Applications/
+install -o root %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -51,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %config %{_libdir}/X11/app-defaults/Clipboard
 %attr(755,root,root) %{_bindir}/clipboard
 %{_mandir}/man1/clipboard.1
-%{_applnkdir}/Applications/offix-clipboard.desktop
+%{_applnkdir}/Office/offix-clipboard.desktop
