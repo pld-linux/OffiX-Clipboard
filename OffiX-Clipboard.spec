@@ -14,6 +14,10 @@ OffiX-Clipboard is a patch to the standard xclipboard program. If you
 drop things on the clipboard window, they are inserted into the
 current clipboard.
 
+%description -l pl
+OffiX-Clipboard to ³ata na standardowy program xclipboard. Po upuszczeniu 
+na okno schowka, dana rzecz zostaje umieszczona w bie¿±cym schowku.
+
 %prep
 %setup -q -n Clipboard-2.4
 %patch -p1
