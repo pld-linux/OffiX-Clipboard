@@ -6,6 +6,7 @@ Release:	8
 License:	GPL
 Group:		X11
 Source0:	ftp://ftp.leb.net/pub/offix/Clipboard-%{version}.tar.gz
+# Source0-md5:	3fa71e8f5d775d0bfd3e21cbcd370106
 Source1:	offix-clipboard.desktop
 Patch0:		Clipboard-2.4-Xaw3d.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
