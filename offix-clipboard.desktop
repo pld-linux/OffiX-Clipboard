@@ -4,4 +4,5 @@ Name[pl]=Schowek
 Description=Clipboard with drag and drop support
 Description[pl]=Schowek z obs�ugą "przenieś i upuść"
 Exec=clipboard
+Type=Application
 # vi: encoding=utf-8
