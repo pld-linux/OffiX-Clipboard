@@ -1,4 +1,5 @@
-Summary:	A drag and drop clipboard patch for xclipboard.
+Summary:	A drag and drop clipboard patch for xclipboard
+Summary(pl):	£ata z obs³ug± drag and drop do xclipboard
 Name:		OffiX-Clipboard
 Version:	2.4
 Release:	8
@@ -39,7 +40,7 @@ install -c Clipboard.ad $RPM_BUILD_ROOT%{_libdir}/X11/app-defaults/Clipboard
 %{__make} prefix=$RPM_BUILD_ROOT%{_prefix}/ install
 
 install -d $RPM_BUILD_ROOT%{_applnkdir}/Applications/
-install -o root %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
 
 %clean
 rm -rf $RPM_BUILD_ROOT
