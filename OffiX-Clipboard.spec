@@ -1,3 +1,5 @@
+# TODO:
+# - DESTDIR patch
 Summary:	A drag and drop clipboard patch for xclipboard
 Summary(pl):	Xclipboard z ³at± do obs³ugi "przenie¶ i upu¶æ"
 Name:		OffiX-Clipboard
@@ -9,7 +11,8 @@ Source0:	ftp://ftp.leb.net/pub/offix/Clipboard-%{version}.tar.gz
 # Source0-md5:	3fa71e8f5d775d0bfd3e21cbcd370106
 Source1:	offix-clipboard.desktop
 Patch0:		Clipboard-2.4-Xaw3d.patch
-BuildRequires:	OffiX-devel # ??? from http://leb.net/OffiX/
+BuildRequires:	OffiX-devel
+BuildRequires:	Xaw3d-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
@@ -36,13 +39,13 @@ schowku.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_appdefsdir},%{_applnkdir}/Office}
+install -d $RPM_BUILD_ROOT{%{_appdefsdir},%{_desktopdir}}
 
 %{__make} install \
 	prefix=$RPM_BUILD_ROOT%{_prefix}
 
 install Clipboard.ad $RPM_BUILD_ROOT%{_appdefsdir}/Clipboard
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Office
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -53,4 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/clipboard
 %{_appdefsdir}/Clipboard
 %{_mandir}/man1/clipboard.1*
-%{_applnkdir}/Office/offix-clipboard.desktop
+%{_desktopdir}/*.desktop
