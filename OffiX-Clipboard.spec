@@ -29,7 +29,7 @@ schowku.
 
 %prep
 %setup -q -n Clipboard-2.4
-%patch -p1
+%patch0 -p1
 
 %build
 %configure2_13 \
