@@ -1,7 +1,7 @@
 # TODO:
 # - DESTDIR patch
 Summary:	A drag and drop clipboard patch for xclipboard
-Summary(pl):	Xclipboard z ³at± do obs³ugi "przenie¶ i upu¶æ"
+Summary(pl.UTF-8):   Xclipboard z Å‚atÄ… do obsÅ‚ugi "przenieÅ› i upuÅ›Ä‡"
 Name:		OffiX-Clipboard
 Version:	2.4
 Release:	8
@@ -22,9 +22,9 @@ OffiX-Clipboard is a patch to the standard xclipboard program. If you
 drop things on the clipboard window, they are inserted into the
 current clipboard.
 
-%description -l pl
-OffiX-Clipboard to ³ata na standardowy program xclipboard. Po
-upuszczeniu na okno schowka, dana rzecz zostaje umieszczona w bie¿±cym
+%description -l pl.UTF-8
+OffiX-Clipboard to Å‚ata na standardowy program xclipboard. Po
+upuszczeniu na okno schowka, dana rzecz zostaje umieszczona w bieÅ¼Ä…cym
 schowku.
 
 %prep
