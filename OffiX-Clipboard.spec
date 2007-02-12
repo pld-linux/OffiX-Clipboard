@@ -1,7 +1,7 @@
 # TODO:
 # - DESTDIR patch
 Summary:	A drag and drop clipboard patch for xclipboard
-Summary(pl.UTF-8):   Xclipboard z łatą do obsługi "przenieś i upuść"
+Summary(pl.UTF-8):	Xclipboard z łatą do obsługi "przenieś i upuść"
 Name:		OffiX-Clipboard
 Version:	2.4
 Release:	8
